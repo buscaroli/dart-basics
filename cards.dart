@@ -47,6 +47,9 @@ class Deck {
     return cards.toString();
   }
   
+  // The return is not strictly necessary: the 'builtin shuffle method' mutates the array
+  // we are operating on and we only need to return the shuffled array if we want 
+  // to immediately make use of it within 'our shuffle method'
   shuffle(){
     // shuffle() is a method part of dart::core -> List
     return cards.shuffle();
