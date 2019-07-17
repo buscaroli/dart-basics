@@ -61,6 +61,9 @@ main(){
   words.forEach(print);
 
   // printing using a personalized function
+  // NB The Dart Language's guidelines discourage the use
+  // of .forEach with lambda functions, if not having a
+  // function ready please use a for loop
   words.forEach(myPrint);
 
   // List of Student objects
@@ -77,5 +80,9 @@ main(){
   // Pretty-printing the properties of each student, made
   // possible by overriding the toString() method
   studentList.forEach(print);
+
+  // Checking if a list is Empty or Not using inbuilt methods
+  print(studentList.isEmpty);
+  print(studentList.isNotEmpty);
 
 }

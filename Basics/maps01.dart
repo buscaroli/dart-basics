@@ -31,4 +31,8 @@ main(){
     }
   });
 
+  // Printing the value by passing the key
+  print(staff[113463]);
+
+
 }
